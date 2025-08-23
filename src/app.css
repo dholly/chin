@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './theme.css';
+@import './utilities.css';
+@import './custom.css' layer(utilities);
+
+@source '../../vendor/tailpress/framework/**/*.php';
+@source '../../vendor/tailpress/framework/**/**/*.php';
+
+@utility container {
+    max-width: 1410px;
+    margin-inline: auto;
+    padding-inline: 5px;
+    @media (max-width: 959px) {
+        padding-inline: 20px;
+    }
+}
+@utility full-width{
+    margin-inline: -5px;
+
+    @media (max-width: 959px) {
+        margin-inline: -20px;
+
+    }
+}
+@utility full-width-swiper{
+    margin-inline: -5px!important;
+    padding-inline: 5px!important;
+    @media (max-width: 959px) {
+        margin-inline: -20px!important;
+        padding-inline: 20px!important;
+    }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-zinc-200, currentColor);
+  }
+}
