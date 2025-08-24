@@ -1,16 +1,56 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <div class="base-button" id="counter"></div>
-    <button class="base-button">hello</button>
-    <div class="text-[40px] text-red-500">hello</div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-[#FBBE77] py-[50px]">
+<div class="w-full max-w-[1170px] mx-auto">
+    <section class="grid grid-cols-1 xs:grid-cols-2 gap-[30px]">
+        <div class="bg-white rounded-[20px] h-[94px] lg:h-[194px] border-[3px] border-white hover:border-[#E86669] transition-colors duration-300 cursor-pointer py-[17px] px-[7px] lg:px-[36px] flex justify-between items-center group">
+            <div class="flex-1 pr-[3px] lg:pr-[10px] max-h-[160px] overflow-hidden">
+                <p class="text-[16px] lg:text-[24px] font-[700] leading-[1.5] text-black group-hover:text-[rgba(161,85,34,1)] transition-colors duration-300 line-clamp-2 lg:line-clamp-4">
+                    Lorem ipsum dolor sit amet
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/160x160.png" alt="Placeholder"
+                     class="w-[80px] h-[80px] lg:w-[160px] lg:h-[160px] object-cover rounded">
+            </div>
+        </div>
+        <div class="bg-white rounded-[20px] h-[94px] lg:h-[194px] border-[3px] border-white hover:border-[#E86669] transition-colors duration-300 cursor-pointer py-[17px] px-[7px] lg:px-[36px] flex justify-between items-center group">
+            <div class="flex-1 pr-[3px] lg:pr-[10px] max-h-[160px] overflow-hidden">
+                <p class="text-[16px] lg:text-[24px] font-[700] leading-[1.5] text-black group-hover:text-[rgba(161,85,34,1)] transition-colors duration-300 line-clamp-2 lg:line-clamp-4">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/160x160.png" alt="Placeholder"
+                     class="w-[80px] h-[80px] lg:w-[160px] lg:h-[160px] object-cover rounded">
+            </div>
+        </div>
+        <div class="bg-white rounded-[20px] h-[94px] lg:h-[194px] border-[3px] border-white hover:border-[#E86669] transition-colors duration-300 cursor-pointer py-[17px] px-[7px] lg:px-[36px] flex justify-between items-center group">
+            <div class="flex-1 pr-[3px] lg:pr-[10px] max-h-[160px] overflow-hidden">
+                <p class="text-[16px] lg:text-[24px] font-[700] leading-[1.5] text-black group-hover:text-[rgba(161,85,34,1)] transition-colors duration-300 line-clamp-2 lg:line-clamp-4">
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </p>
+            </div>
+            <div class="flex-shrink-0">
+                <img src="https://placehold.co/160x160.png" alt="Placeholder"
+                     class="w-[80px] h-[80px] lg:w-[160px] lg:h-[160px] object-cover rounded">
+            </div>
+        </div>
+    </section>
+</div>
+<script type="module" src="/src/main.js"></script>
+</body>
+
 </html>
